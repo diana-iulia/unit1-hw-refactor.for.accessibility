@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>website</title>
+</head>
+
+<!-- added tab index to all essential information on page, all 0 except for <h1> so that the page title would be read first. -->
+
+<body>
+    <!-- added banner role to h1 to make distinction between page title and reg. heading; added navigation role to <ul> and button roles to each <li> so user knows they're clickable links-->
+    <div class="header">
+        <h1 role="banner" tabindex="1">Hori<span class="seo">seo</span>n</h1>
+        <div>
+            <ul role="navigation">
+                <li role="button">
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li role="button">
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li role="button">
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--changed <p> to <summary> and added column header role for screen reader clarity. After writing the first alt description, I realized that the images don't provide much substance and I didn't continue, should I have? I guess that question is better suited for people who need to use screen readers... -->
+    <div class="hero"></div>
+        <div class="content">
+            <div class="search-engine-optimization">
+                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" tabindex="0" alt="top view of desktop with a laptop, colorful pens, a mug of coffee, and an open notebook with a mind map drawing"/>
+                <h2 role="columnheader" tabindex="0">Search Engine Optimization</h2>
+                <summary tabindex="0">
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </summary>
+            </div>
+            <div id="online-reputation-management" class="online-reputation-management">
+                <img src="./assets/images/online-reputation-management.jpg" class="float-right" tabindex="0" alt=""/>
+                <h2 role="columnheader" tabindex="0">Online Reputation Management</h2>
+                <summary tabindex="0">
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </summary>
+            </div>
+            <div id="social-media-marketing" class="social-media-marketing">
+                <img src="./assets/images/social-media-marketing.jpg" class="float-left" tabindex="0" alt=""/>
+                <h2 role="columnheader" tabindex="0">Social Media Marketing</h2>
+                <summary tabindex="0">
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </summary>
+            </div>
+        </div>
+    <!-- added aside tags in place of <div> so user can distinguish between sections -->
+    <aside class="benefits">
+        <div class="benefit-lead">
+            <h3 role="columnheader" tabindex="0">Lead Generation</h3>
+            <img src="./assets/images/lead-generation.png" alt=""/>
+            <summary tabindex="0">
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </summary>
+        </div>
+        <div class="benefit-brand">
+            <h3 role="columnheader" tabindex="0">Brand Awareness</h3>
+            <img src="./assets/images/brand-awareness.png" alt=""/>
+            <summary tabindex="0">
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </summary>
+        </div>
+        <div class="benefit-cost">
+            <h3 role="columnheader" tabindex="0">Cost Management</h3>
+            <img src="./assets/images/cost-management.png" alt=""/>
+            <summary tabindex="0">
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </summary>
+        </div>
+    </aside>
+    <div class="footer" tabindex="0">
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </div>
+</body>
+
+</html>
+
+
